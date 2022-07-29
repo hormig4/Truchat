@@ -1,0 +1,287 @@
+
+      :root{
+        --clr-neon: hs1(317 100% 54%);
+        --clr-bg: hs1(323 21% 16%);
+        overflow-x: hidden ;
+
+      
+        @import url(http://fonts.cdnfonts.com/css/depixel);
+      
+        
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      body{
+        background: #111;
+        overflow: hidden;
+        overflow-x: hidden;
+        padding: 90px;
+       max-height: 100vh;
+      }
+      .container{
+        height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 600px;
+      }
+
+      .logo img{
+        width: 60px;
+        height: 55px;
+}
+
+
+
+
+.col-md-6{
+  
+  color: hotpink;
+}
+      
+  h1{
+    text-align: center;
+  }
+
+  .chatAction{
+    height: 500px;
+  }
+
+
+     .wraper-chat {
+        height: 50vh;
+        overflow: scroll;
+        overflow-x: hidden;
+        border-radius: 2%;
+        display: block;
+
+
+      }
+
+.wraper-chat:-webkit-scrollbar{
+  display: none;
+
+}
+      .headerchat{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #titulo{
+        color: #FF6EC7;
+        font-family: depixel;
+
+
+      }
+
+      #descripcion{
+        color: lightgreen;
+        font-family: depixel;
+        display: none;
+      }
+
+      /*color de los label*/
+
+     .col-sm-2.col-form-label {
+        color: lightgreen;
+        font-family: depixel;
+       }
+
+      
+  
+      .list-group-item{
+        background: bottom;
+        border-color: lightpink;
+        color: rosybrown;
+      }
+
+      #nombreUsuario{
+        color: navajowhite;
+        padding: 6px;
+        ;
+      }
+
+      .neon-title{
+        color: var(--clr-neon);
+        border: var(--clr-neon) 0.125em solid;
+        border-radius: 0.25em;
+        text-shadow: 0 0 7.75em #fafafa, 0 0 0.5em currentColor;
+        box-shadow: inset 0 0 1em 0 var(--clr-neon);
+        font-family: depixel;
+        letter-spacing: 14px;
+      }
+
+      .neon-title::before{
+        content: "";
+        position: absolute;
+        background: var(--clr-neon);
+        top: 120%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+        filter: blur(1em);
+      }
+
+      #tituloNeon2{
+        display: none;
+      }
+
+
+      /*color de los botones*/
+    
+      .btn.btn-outline-info{
+        color: lightgreen;
+        border: solid 1px  palevioletred;
+        border-radius: 0.25em;
+        text-shadow: 0 0 7.75em #fafafa, 0 0 0.5em currentColor;
+        box-shadow: inset 0 0 1em 0 var (--clr-neon), 0 0 0.5em 0 var (--clr-neon);
+        width: -webkit-fill-available;
+        z-index: -1;
+        transition: background-color 100ms linear;
+        font-family: depixel;
+      }
+
+      .btn.btn-outline-info::before{
+        pointer-events: none;
+        content: "";
+        position: absolute;
+        background-color: var(--clr-neon);
+        top: 120%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+        filter: blur(1em);
+        opacity: 0.7;
+      }
+
+
+      .btn.btn-outline-info:hover,
+      .btn.btn-outline-info:focus {
+        color: hotpink;
+        background-color: #111;
+        text-shadow: none;
+        border: solid 1px lightgreen;
+      }
+
+      .btn.btn-outline-info:hover::before{
+        opacity: 1;
+      }
+      .btn.btn-outline-info:hover::after{
+        opacity: 1;
+      }
+
+       
+      
+
+      .btn.btn-outline-danger{
+        color:  rgb(148, 27, 27);
+        border: solid 1px rgb(148, 27, 27);
+        border-radius: 0.25em;
+        text-shadow: 0 0 5.75em #fafafa, 0 0 0.5em currentColor;
+        box-shadow: inset 0 0 1em 0 var (--clr-neon), 0 0 0.5em 0 var (--clr-neon);
+        width: -webkit-fill-available;
+        z-index: -1;
+        transition: background-color 100ms linear;
+        font-family: depixel;
+        
+      }
+
+      .btn.btn-outline-danger:hover{
+        width: -webkit-fill-available;
+    
+    background: none;
+    color: rgb(168, 31, 31);
+    border-color: rgb(219, 31, 31);
+      }
+
+
+
+      .form-control{
+      background: lightpink;
+      margin: 3px;
+      border-radius: 12px;
+      border: none;
+      }
+      
+      .form-control:focus {
+         color: #212529;
+        background-color: #bf9e9e;
+          border-color:none;
+          outline: 0;
+        border: none;
+      }
+      
+      
+      
+       .login{
+        display: flex;
+        justify-content: center;
+       
+}
+      
+      
+      
+
+      .login img{
+        width: 80px;
+        height: 80px;
+      }
+
+      .botonGoogle{
+        color: var(--clr-neon);
+        border: solid 1px  palevioletred;
+        border-radius: 0.25em;
+        text-shadow: 0 0 5.75em #fafafa, 0 0 0.5em currentColor;
+        box-shadow: inset 0 0 1em 0 var (--clr-neon), 0 0 0.5em 0 var (--clr-neon);
+        width: -webkit-fill-available;
+        z-index: 0;
+        transition: background-color 100ms linear;
+        font-family: depixel;
+        cursor: pointer;
+        width: auto;
+        
+      }
+
+      .botonGoogle:hover{
+        color: #222;
+        border: solid 1px  palevioletred;
+        border-radius: 0.25em;
+        text-shadow: 0 0 5.75em #fafafa, 0 0 0.5em currentColor;
+        box-shadow: inset 0 0 1em 0 var (--clr-neon), 0 0 0.5em 0 var (--clr-neon);
+        width: -webkit-fill-available;
+        z-index: 0;
+        transition: background-color 100ms linear;
+        font-family: depixel;
+        cursor: pointer;
+        width: auto;
+        background-color: lightgreen;
+      }
+
+      ::-webkit-scrollbar {
+     width: 10px;
+      
+}
+::-webkit-scrollbar-track {
+  background: lightpink;
+}
+::-webkit-scrollbar-thumb {
+  background: #FF6EC7;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+      

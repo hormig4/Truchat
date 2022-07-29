@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Truchat 💬</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content Security Policy" content ="solicitudes de actualización no seguras">
+
+
+    <!---Bootstrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+ <link rel="stylesheet" href="Css/style.css">
+ <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/depixel" type="text/css">
+  
+</head>
+<body>
+    <div class="container">
+      
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <h1 id="tituloNeon" class="neon-title"><span  id="spaneon" class="typed">TRUCHAT</span></h1>
+          <h1 id="tituloNeon2" class="neon-title">TRUCHAT</h1>
+            
+          </div>
+          <div class="headerchat">
+          
+          <p id="descripcion">Presioná enter para enviar el mensaje 💬</p>
+          </div>
+     <div class="chatAction" id="chatAction" style="display: none">
+  
+          <div class="wraper-chat" id="cajaChat">
+           
+            <ul id="chat" class="list-group"></ul>
+          </div>
+  
+          <br><br>
+        <div class="mb-3 row">
+          <label for="staticEmail" class="col-sm-2 col-form-label">Usuario</label>
+          <div class="col-sm-10">
+            <input type="text" readonly class="form-control-plaintext" id="nombreUsuario" value="">
+          </div>
+        </div>
+  
+          <div class="mb-3 row">
+            <label for="mensaje" class="col-sm-2 col-form-label">Mensaje</label>
+            <div class="col-sm-10">
+            <input type="text" class="form-control" id="mensaje"/>
+            </div>
+          </div>
+  
+          <div class="col-sm-10"></div>
+          <br/>
+          <button type="button" class="btn btn-outline-info" id="pp">Enviar</button>
+          <br/> <br/>
+          <button type="button" class="btn btn-outline-danger" id="cerrarSesion">Cerrar sesión</button>
+        
+        
+        </div>
+     
+      </div>   
+      <div class="login" id="logGoo">
+        <button class="botonGoogle" id="loginG">INGRESAR CON GOOGLE</button>
+       </div> 
+       
+      
+    </div>
+
+
+    <!--tipografia escritura--->
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@latest/lib/typed.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="module" src="./Js/main.js"></script>
+
+  </body>
+  
+
+</html>
